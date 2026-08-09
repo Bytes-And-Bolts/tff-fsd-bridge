@@ -1,0 +1,76 @@
+name: Collect and publish TFF FSD bridge
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths:
+      - "collector.py"
+      - ".github/workflows/collect.yml"
+
+  schedule:
+    - cron: "40 8 * * *"
+      timezone: "Europe/Berlin"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tff-fsd-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Collect and prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.13"
+
+      - name: Collect public TFF posts
+        env:
+          OUTPUT_DIR: dist
+        run: python collector.py
+
+      - name: Verify generated files
+        run: |
+          test -s dist/index.html
+          test -s dist/latest.json
+          test -s dist/latest.txt
+          python -m json.tool dist/latest.json >/dev/null
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: dist
+          retention-days: 1
+
+  deploy:
+    name: Publish GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
