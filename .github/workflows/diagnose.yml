@@ -9,7 +9,7 @@ permissions:
 jobs:
   probe:
     name: Probe public TFF endpoints
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     timeout-minutes: 5
 
     steps:
