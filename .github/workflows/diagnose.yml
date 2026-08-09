@@ -1,0 +1,85 @@
+name: Diagnose TFF access
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    name: Probe public TFF endpoints
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Test endpoints without printing forum content
+        shell: bash
+        run: |
+          set -u
+
+          probe() {
+            label="$1"
+            url="$2"
+            user_agent="$3"
+            accept="$4"
+            headers="$(mktemp)"
+            body="$(mktemp)"
+
+            echo "===== ${label} ====="
+            curl --location --silent --show-error \
+              --connect-timeout 15 \
+              --max-time 30 \
+              --user-agent "$user_agent" \
+              --header "Accept: $accept" \
+              --header "Accept-Language: de-DE,de;q=0.9,en;q=0.8" \
+              --dump-header "$headers" \
+              --output "$body" \
+              --write-out "HTTP=%{http_code}\nTYPE=%{content_type}\nBYTES=%{size_download}\nREDIRECTS=%{num_redirects}\n" \
+              "$url" || true
+
+            grep -Eai '^(server|content-type|location|cf-ray|cf-mitigated|retry-after):' "$headers" || true
+            sha256sum "$body" | sed 's/  .*/  [response body omitted]/' || true
+            rm -f "$headers" "$body"
+            echo
+            sleep 1
+          }
+
+          TOPIC='https://tff-forum.de/t/fsd-supervised-unsupervised-und-kuenftige-fsd-versionen-teil-5/423953'
+          BROWSER_UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+          BRIDGE_UA='TFF-FSD-Bridge/1.0 (+https://github.com/foxx-c/tff-fsd-bridge)'
+
+          probe 'Current bridge UA — last.json' \
+            'https://tff-forum.de/t/-/423953/last.json' \
+            "$BRIDGE_UA" \
+            'application/json'
+
+          probe 'Browser UA — homepage' \
+            'https://tff-forum.de/' \
+            "$BROWSER_UA" \
+            'text/html,application/xhtml+xml'
+
+          probe 'Browser UA — topic HTML' \
+            "$TOPIC" \
+            "$BROWSER_UA" \
+            'text/html,application/xhtml+xml'
+
+          probe 'Browser UA — topic RSS' \
+            "${TOPIC}.rss" \
+            "$BROWSER_UA" \
+            'application/rss+xml,application/xml;q=0.9,*/*;q=0.8'
+
+          probe 'Browser UA — canonical topic JSON' \
+            "${TOPIC}.json" \
+            "$BROWSER_UA" \
+            'application/json,text/plain;q=0.9,*/*;q=0.8'
+
+          probe 'Browser UA — short topic JSON' \
+            'https://tff-forum.de/t/423953.json' \
+            "$BROWSER_UA" \
+            'application/json,text/plain;q=0.9,*/*;q=0.8'
+
+          probe 'Browser UA — last.json' \
+            'https://tff-forum.de/t/-/423953/last.json' \
+            "$BROWSER_UA" \
+            'application/json,text/plain;q=0.9,*/*;q=0.8'
