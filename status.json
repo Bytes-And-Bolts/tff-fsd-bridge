@@ -1,0 +1,32 @@
+{
+  "active_topic" : {
+    "archived" : false,
+    "closed" : false,
+    "id" : 423953,
+    "lastPostedAt" : "2026-08-13T12:23:09Z",
+    "part" : 5,
+    "title" : "FSD Supervised/Unsupervised und künftige FSD-Versionen (Teil 5)",
+    "url" : "https://tff-forum.de/t/-/423953"
+  },
+  "collection_complete" : true,
+  "coverage" : {
+    "earliest_post" : "2026-08-11T14:16:37Z",
+    "from" : "2026-08-11T14:04:36Z",
+    "latest_post" : "2026-08-13T12:23:09Z",
+    "post_count" : 49,
+    "to" : "2026-08-13T14:04:36Z"
+  },
+  "error_code" : null,
+  "error_message" : null,
+  "generated_at" : "2026-08-13T14:04:37Z",
+  "last_fetch_success" : true,
+  "last_upload_at" : "2026-08-13T14:04:39Z",
+  "last_upload_success" : true,
+  "latest_post" : {
+    "author" : "gerritm",
+    "createdAt" : "2026-08-13T12:23:09Z",
+    "postNumber" : 4948
+  },
+  "post_count" : 49,
+  "run_id" : "D50CD2E3-047D-417A-97B7-D8A3B0D6612D"
+}
