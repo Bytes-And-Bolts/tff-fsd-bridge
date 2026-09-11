@@ -3,30 +3,30 @@
     "archived" : false,
     "closed" : false,
     "id" : 423953,
-    "lastPostedAt" : "2026-09-10T00:27:24Z",
+    "lastPostedAt" : "2026-09-11T00:39:19Z",
     "part" : 5,
     "title" : "FSD Supervised/Unsupervised und künftige FSD-Versionen (Teil 5)",
     "url" : "https://tff-forum.de/t/-/423953"
   },
   "collection_complete" : true,
   "coverage" : {
-    "earliest_post" : "2026-09-08T05:49:01Z",
-    "from" : "2026-09-08T04:30:04Z",
-    "latest_post" : "2026-09-10T00:27:24Z",
-    "post_count" : 81,
-    "to" : "2026-09-10T04:30:04Z"
+    "earliest_post" : "2026-09-09T10:40:53Z",
+    "from" : "2026-09-09T04:30:05Z",
+    "latest_post" : "2026-09-11T00:39:19Z",
+    "post_count" : 103,
+    "to" : "2026-09-11T04:30:05Z"
   },
   "error_code" : null,
   "error_message" : null,
-  "generated_at" : "2026-09-10T04:30:05Z",
+  "generated_at" : "2026-09-11T04:30:06Z",
   "last_fetch_success" : true,
-  "last_upload_at" : "2026-09-10T04:30:07Z",
+  "last_upload_at" : "2026-09-11T04:30:08Z",
   "last_upload_success" : true,
   "latest_post" : {
-    "author" : "Louis_kators",
-    "createdAt" : "2026-09-10T00:27:24Z",
-    "postNumber" : 5558
+    "author" : "Robert1982",
+    "createdAt" : "2026-09-11T00:39:19Z",
+    "postNumber" : 5614
   },
-  "post_count" : 81,
-  "run_id" : "79A81880-8962-4B76-93A8-A0EB9E4130B9"
+  "post_count" : 103,
+  "run_id" : "28053439-1AA3-40E7-9528-F4AAF0FE1C9A"
 }
