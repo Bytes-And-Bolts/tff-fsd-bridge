@@ -10,23 +10,23 @@
   },
   "collection_complete" : true,
   "coverage" : {
-    "earliest_post" : "2026-09-18T06:59:04Z",
-    "from" : "2026-09-18T04:30:05Z",
+    "earliest_post" : "2026-09-19T05:32:17Z",
+    "from" : "2026-09-19T04:30:01Z",
     "latest_post" : "2026-09-19T05:32:17Z",
-    "post_count" : 28,
-    "to" : "2026-09-20T04:30:05Z"
+    "post_count" : 1,
+    "to" : "2026-09-21T04:30:01Z"
   },
   "error_code" : null,
   "error_message" : null,
-  "generated_at" : "2026-09-20T04:30:06Z",
+  "generated_at" : "2026-09-21T04:30:03Z",
   "last_fetch_success" : true,
-  "last_upload_at" : "2026-09-20T04:30:08Z",
+  "last_upload_at" : "2026-09-21T04:30:05Z",
   "last_upload_success" : true,
   "latest_post" : {
     "author" : "Cruach",
     "createdAt" : "2026-09-19T05:32:17Z",
     "postNumber" : 268
   },
-  "post_count" : 28,
-  "run_id" : "CB29116D-7610-4133-8727-0E505C94D49D"
+  "post_count" : 1,
+  "run_id" : "A50EC415-ADF4-4674-92BB-0FD7CF38F2E7"
 }
