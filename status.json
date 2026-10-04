@@ -10,23 +10,23 @@
   },
   "collection_complete" : true,
   "coverage" : {
-    "earliest_post" : "2026-10-01T04:54:48Z",
-    "from" : "2026-10-01T04:30:05Z",
+    "earliest_post" : "2026-10-02T07:45:41Z",
+    "from" : "2026-10-02T04:30:02Z",
     "latest_post" : "2026-10-02T20:55:02Z",
-    "post_count" : 67,
-    "to" : "2026-10-03T04:30:05Z"
+    "post_count" : 11,
+    "to" : "2026-10-04T04:30:02Z"
   },
   "error_code" : null,
   "error_message" : null,
-  "generated_at" : "2026-10-03T04:30:08Z",
+  "generated_at" : "2026-10-04T04:30:04Z",
   "last_fetch_success" : true,
-  "last_upload_at" : "2026-10-03T04:30:10Z",
+  "last_upload_at" : "2026-10-04T04:30:07Z",
   "last_upload_success" : true,
   "latest_post" : {
     "author" : "Teslanova56",
     "createdAt" : "2026-10-02T20:55:02Z",
     "postNumber" : 1000
   },
-  "post_count" : 67,
-  "run_id" : "75CAFBBA-3833-403A-A6E7-22ABF5832140"
+  "post_count" : 11,
+  "run_id" : "C8E800CE-E572-4B7A-BA5E-F3FDD8F534CA"
 }
