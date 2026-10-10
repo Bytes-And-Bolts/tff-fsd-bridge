@@ -10,17 +10,17 @@
   },
   "collection_complete" : true,
   "coverage" : {
-    "from" : "2026-10-08T04:30:04Z",
+    "from" : "2026-10-08T09:40:03Z",
     "post_count" : 0,
-    "to" : "2026-10-10T04:30:04Z"
+    "to" : "2026-10-10T09:40:03Z"
   },
   "error_code" : null,
   "error_message" : null,
-  "generated_at" : "2026-10-10T04:30:05Z",
+  "generated_at" : "2026-10-10T09:40:04Z",
   "last_fetch_success" : true,
-  "last_upload_at" : "2026-10-10T04:30:07Z",
+  "last_upload_at" : "2026-10-10T09:40:06Z",
   "last_upload_success" : true,
   "latest_post" : null,
   "post_count" : 0,
-  "run_id" : "6A9F1FA5-016B-49BC-9A69-3C1D43C1EE31"
+  "run_id" : "6A555855-4709-4AA1-AB06-FFB825DECE15"
 }
