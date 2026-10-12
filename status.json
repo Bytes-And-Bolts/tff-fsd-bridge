@@ -1,26 +1,32 @@
 {
   "active_topic" : {
     "archived" : false,
-    "closed" : true,
-    "id" : 423953,
-    "lastPostedAt" : "2026-09-11T08:11:07Z",
-    "part" : 5,
-    "title" : "FSD Supervised/Unsupervised und künftige FSD-Versionen (Teil 5)",
-    "url" : "https://tff-forum.de/t/-/423953"
+    "closed" : false,
+    "id" : 437972,
+    "lastPostedAt" : "2026-10-12T11:42:27Z",
+    "part" : 6,
+    "title" : "Tesla Assisted Driving (TAD, ehem. FSD) (Teil 6)",
+    "url" : "https://tff-forum.de/t/-/437972"
   },
   "collection_complete" : true,
   "coverage" : {
-    "from" : "2026-10-09T04:30:03Z",
-    "post_count" : 0,
-    "to" : "2026-10-11T04:30:03Z"
+    "earliest_post" : "2026-10-10T13:14:12Z",
+    "from" : "2026-10-10T12:43:24Z",
+    "latest_post" : "2026-10-12T11:42:27Z",
+    "post_count" : 77,
+    "to" : "2026-10-12T12:43:24Z"
   },
   "error_code" : null,
   "error_message" : null,
-  "generated_at" : "2026-10-11T04:30:04Z",
+  "generated_at" : "2026-10-12T12:43:24Z",
   "last_fetch_success" : true,
-  "last_upload_at" : "2026-10-11T04:30:06Z",
+  "last_upload_at" : "2026-10-12T12:50:17Z",
   "last_upload_success" : true,
-  "latest_post" : null,
-  "post_count" : 0,
-  "run_id" : "61FD6D14-BC79-4624-8F3F-8789E61E56F5"
+  "latest_post" : {
+    "author" : "Teslanova56",
+    "createdAt" : "2026-10-12T11:42:27Z",
+    "postNumber" : 1720
+  },
+  "post_count" : 77,
+  "run_id" : "2AEDDFCA-E8F2-4F75-857D-F311D20F3711"
 }
