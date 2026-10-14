@@ -11,16 +11,16 @@
   "collection_complete" : true,
   "coverage" : {
     "earliest_post" : "2026-10-12T20:03:08Z",
-    "from" : "2026-10-12T19:56:45Z",
+    "from" : "2026-10-12T19:57:22Z",
     "latest_post" : "2026-10-14T19:25:52Z",
     "post_count" : 81,
-    "to" : "2026-10-14T19:56:45Z"
+    "to" : "2026-10-14T19:57:22Z"
   },
   "error_code" : null,
   "error_message" : null,
-  "generated_at" : "2026-10-14T19:56:45Z",
+  "generated_at" : "2026-10-14T19:57:22Z",
   "last_fetch_success" : true,
-  "last_upload_at" : "2026-10-14T19:57:15Z",
+  "last_upload_at" : "2026-10-14T19:57:37Z",
   "last_upload_success" : true,
   "latest_post" : {
     "author" : "Der-Kieler",
@@ -28,5 +28,5 @@
     "postNumber" : 1841
   },
   "post_count" : 81,
-  "run_id" : "8652AF72-8F28-47EA-BDAE-EFE365419035"
+  "run_id" : "5A0B72EF-C14B-499F-9E28-A86DD1B7EDF0"
 }
