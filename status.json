@@ -3,30 +3,30 @@
     "archived" : false,
     "closed" : false,
     "id" : 437972,
-    "lastPostedAt" : "2026-10-26T19:47:11Z",
+    "lastPostedAt" : "2026-10-27T05:12:26Z",
     "part" : 6,
     "title" : "Tesla Assisted Driving (TAD, ehem. FSD) (Teil 6)",
     "url" : "https://tff-forum.de/t/-/437972"
   },
   "collection_complete" : true,
   "coverage" : {
-    "earliest_post" : "2026-10-24T20:18:04Z",
-    "from" : "2026-10-24T20:01:43Z",
-    "latest_post" : "2026-10-26T19:47:11Z",
-    "post_count" : 73,
-    "to" : "2026-10-26T20:01:43Z"
+    "earliest_post" : "2026-10-25T06:10:56Z",
+    "from" : "2026-10-25T05:31:37Z",
+    "latest_post" : "2026-10-27T05:12:26Z",
+    "post_count" : 84,
+    "to" : "2026-10-27T05:31:37Z"
   },
   "error_code" : null,
   "error_message" : null,
-  "generated_at" : "2026-10-26T20:01:43Z",
+  "generated_at" : "2026-10-27T05:31:37Z",
   "last_fetch_success" : true,
-  "last_upload_at" : "2026-10-26T20:02:02Z",
+  "last_upload_at" : "2026-10-27T05:32:23Z",
   "last_upload_success" : true,
   "latest_post" : {
-    "author" : "Adampfeift",
-    "createdAt" : "2026-10-26T19:47:11Z",
-    "postNumber" : 2260
+    "author" : "Robert1982",
+    "createdAt" : "2026-10-27T05:12:26Z",
+    "postNumber" : 2272
   },
-  "post_count" : 73,
-  "run_id" : "9F406A65-39A2-48A1-8F92-64B4574243BF"
+  "post_count" : 84,
+  "run_id" : "DF2A096C-2AD0-4421-8138-E6DF0C9B83DD"
 }
